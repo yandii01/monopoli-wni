@@ -1,0 +1,65 @@
+/* =========================================================================
+   DESIGN TOKENS - MONOPOLI WNI (UI/UX PRO MAX & TASTESKILL COMPLIANT)
+   ========================================================================= */
+
+:root {
+  /* Palette: Dark Gaming Cockpit & Kahoot Party Arcade */
+  --bg-dark: #070b14;
+  --board-bg: #0c1322;
+  --board-center: #0f192c;
+  --panel-bg: rgba(16, 24, 40, 0.94);
+  --card-bg: #152034;
+  --card-bg-subtle: #111b2d;
+  
+  /* Accent Colors (WCAG AA High-Contrast) */
+  --accent-green: #10b981;
+  --accent-green-dark: #059669;
+  --accent-gold: #f59e0b;
+  --accent-gold-dark: #d97706;
+  --accent-red: #ef4444;
+  --accent-red-dark: #dc2626;
+  --accent-blue: #3b82f6;
+  --accent-blue-dark: #2563eb;
+  --accent-cyan: #06b6d4;
+  --accent-purple: #8b5cf6;
+  --accent-orange: #f97316;
+  --accent-teal: #14b8a6;
+  --accent-slate: #64748b;
+
+  /* Text & Foreground */
+  --text: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-subtle: #64748b;
+
+  /* Borders & Dividers */
+  --border: rgba(255, 255, 255, 0.12);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-focus: #38bdf8;
+
+  /* 5 Pulau Nusantara Colors */
+  --color-sumatra: #f59e0b;
+  --color-jawa: #3b82f6;
+  --color-kalimantan: #10b981;
+  --color-sulawesi: #8b5cf6;
+  --color-papua: #ef4444;
+
+  /* Geometry & Radii (Consistent Corner Radius Scale) */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+  --cell-size: 80px;
+
+  /* Elevation & Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 12px 35px rgba(0, 0, 0, 0.65);
+  --shadow-glow-gold: 0 0 25px rgba(245, 158, 11, 0.35);
+  --shadow-glow-green: 0 0 25px rgba(16, 185, 129, 0.35);
+
+  /* Transitions & Animation Timing */
+  --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}

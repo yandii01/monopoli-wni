@@ -66,5 +66,7 @@ package-lock.json
 /lib/
 dist/
 logs/
+.agents
+.gemini
 .env
 logs-response/

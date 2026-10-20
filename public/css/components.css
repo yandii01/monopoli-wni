@@ -1,0 +1,127 @@
+/* =========================================================================
+   COMPONENTS: TOASTS, POPUP MODALS & EMERGENCY SELL DIALOG
+   ========================================================================= */
+
+/* TOAST NOTIFIKASI */
+.toast-container {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  pointer-events: none;
+  max-width: 380px;
+}
+
+.toast {
+  pointer-events: auto;
+  background: rgba(18, 28, 46, 0.96);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(14px);
+  border-radius: var(--radius-lg);
+  padding: 12px 14px;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  animation: toastSlideIn 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 0.3s ease;
+}
+
+.toast.hide {
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+@keyframes toastSlideIn {
+  from { transform: translateX(70px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.toast-icon {
+  font-size: 26px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.toast-body {
+  flex: 1;
+}
+
+.toast-title {
+  font-size: 13.5px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+.toast-desc {
+  font-size: 12px;
+  color: #cbd5e1;
+  line-height: 1.4;
+}
+
+.toast.info { border-left: 4px solid var(--accent-blue); }
+.toast.success { border-left: 4px solid var(--accent-green); }
+.toast.warning { border-left: 4px solid var(--accent-gold); }
+.toast.danger { border-left: 4px solid var(--accent-red); }
+
+/* KOTAK NOTIFIKASI BESAR DI TENGAH HP & MODAL */
+.mobile-big-alert-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(4, 7, 14, 0.85);
+  backdrop-filter: blur(8px);
+  z-index: 9998;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.mobile-alert-card {
+  background: #111b2d;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: var(--radius-xl);
+  padding: 22px;
+  text-align: center;
+  max-width: 360px;
+  width: 100%;
+  box-shadow: var(--shadow-lg), 0 0 35px rgba(0, 0, 0, 0.8);
+  animation: alertPopIn 0.25s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+@keyframes alertPopIn {
+  from { transform: scale(0.85); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.alert-icon {
+  font-size: 44px;
+  margin-bottom: 8px;
+}
+
+.mobile-alert-card h3 {
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.mobile-alert-card p {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+
+.mobile-alert-card button {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+}
